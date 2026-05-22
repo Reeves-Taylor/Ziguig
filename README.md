@@ -36,6 +36,12 @@ While these libraries can be used independently, they are all included in the ma
 Ziguig is currently in early development and is not yet production-ready.
 APIs may change frequently.
 
+## Coming Soon
+Coming Soon: ZiguigWindow version 0.1.0, the windowing library prototype. 
+
+### Predicted Push Deadline 
+(DD.MM.YY): 25.5.26
+
 ## Contributing
 Contributions, issues, and suggestions are welcome.  
 Please keep discussions respectful and constructive.
