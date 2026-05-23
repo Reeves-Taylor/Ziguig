@@ -17,7 +17,7 @@ Ziguig's goal is to make creating GUI applications in Zig simple and portable. A
 
 
 ```
-
+______________________
 Windowing Library	  ->|
 ______________________	|
 Rendering Library	  ->|
@@ -25,6 +25,9 @@ ______________________  |---------> Ziguig ---> SourceCode.zig
 Text Rendering Library->|
 ______________________  |
 GUI Elements Library  ->|
+______________________  |
+Other Libraries       ->|
+______________________  |
 
 ```
 The libraries will all be separate zig libraries that can use other renderers, windows, text renderers, or elements to work.
@@ -36,11 +39,12 @@ While these libraries can be used independently, they are all included in the ma
 Ziguig is currently in early development and is not yet production-ready.
 APIs may change frequently.
 
-## Coming Soon
-Coming Soon: ZiguigWindow version 0.1.0, the windowing library prototype. 
+ZiguigWindow currently compiles, but Ziguig linking ZiguigLinking does not, needs fixing.
 
-### Predicted Push Deadline 
-(DD.MM.YY): 25.5.26
+## Coming Soon
+Coming Soon: ZiguigWindow version 0.1.1, the windowing library prototype patch 1, fixes the dynamic library linking errors. 
+
+
 
 ## Contributing
 Contributions, issues, and suggestions are welcome.  
