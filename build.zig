@@ -10,7 +10,11 @@ pub fn build(b: *std.Build) void {
         .target = target,
         .optimize = optimize,
     });
-    mod.addImport("window", window.module("window"));
+
+    // Both lines needed: module for @import, artifact for linking
+    const window_mod = window.module("ZiguigWindow");
+    const window_lib = window.artifact("ZiguigWindow");
+
     const exe = b.addExecutable(.{
         .name = "Ziguig",
         .root_module = b.createModule(.{
@@ -19,10 +23,13 @@ pub fn build(b: *std.Build) void {
             .optimize = optimize,
             .imports = &.{
                 .{ .name = "Ziguig", .module = mod },
-                .{ .name = "window", .module = window.module("window") },
+                .{ .name = "ZiguigWindow", .module = window_mod },
             },
         }),
     });
+
+    exe.root_module.linkLibrary(window_lib);
+    b.installArtifact(exe);
     b.installArtifact(exe);
     const run_step = b.step("run", "Run the app");
     const run_cmd = b.addRunArtifact(exe);

@@ -8,8 +8,10 @@ Ziguig (pronounced "ziggwig") is a retained-mode GUI library written in Zig. Unl
 
 The rendering backend uses OpenGL and OpenGL ES for compatibility across mobile devices, macOS, Windows, and Linux.
 
-Ziguig is designed to stay lightweight and dependency-free. It uses simple APIs and Zig standard library allocators, allowing developers to create GUI applications without installing additional dependencies.
+Ziguig is designed to stay lightweight and dependency-free. It uses simple APIs and helper functions to make development easy. 
 
+## Requirements
+GLFW3 installed system wide in C libraries.
 
 ## Goals
 
@@ -39,10 +41,11 @@ While these libraries can be used independently, they are all included in the ma
 Ziguig is currently in early development and is not yet production-ready.
 APIs may change frequently.
 
-ZiguigWindow currently compiles, but Ziguig linking ZiguigLinking does not, needs fixing.
+ZiguigWindow currently compiles and Ziguig main, the test file, opens a window,
 
 ## Coming Soon
-Coming Soon: ZiguigWindow version 0.1.1, the windowing library prototype patch 1, fixes the dynamic library linking errors. 
+
+Coming Soon: ZiguigRenderer
 
 
 
