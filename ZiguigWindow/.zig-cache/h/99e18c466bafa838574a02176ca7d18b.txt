@@ -1,0 +1,2 @@
+0
+2317 8947466 1779321217735384241 da08a738775b6c2ae21401a0bb88965d 0 /home/scisoors/Ziguig/ZiguigWindow/zig-pkg/X11_zig-1.0.0-UuAzbPUKwABZCM3EF2ItvW2z2ZePFe0R-U_A3cIoWkg1/X11/src/xlibi18n/lcDynamic.c

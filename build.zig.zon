@@ -1,0 +1,14 @@
+.{
+    .name = .Ziguig,
+    .version = "0.0.0",
+    .fingerprint = 0x1bd7de1a468500db,
+    .minimum_zig_version = "0.17.0-dev.304+9787df942",
+    .dependencies = .{ .window = .{
+        .path = "ZiguigWindow",
+    } },
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "src",
+    },
+}

@@ -1,0 +1,21 @@
+.{
+    .name = .Ziguig,
+    .version = "0.0.0",
+    .fingerprint = 0x1bd7de1afd8368d2,
+    .minimum_zig_version = "0.17.0-dev.304+9787df942",
+    .dependencies = .{
+        .zigglgen = .{
+            .url = "git+https://github.com/castholm/zigglgen.git#7e55ad15655fc4d602ed3bcbe7fb487592063156",
+            .hash = "zigglgen-0.5.0-ziggltzDLwA0Gk0Pj6QMij1j6Z_jkvGEtGKBM6-YlI_s",
+        },
+        .glfw_zig = .{
+            .url = "git+https://github.com/tiawl/glfw.zig.git#51f8fe1a0df9967c5a70bb4c557a729a8999e08a",
+            .hash = "glfw_zig-1.0.0-NrvYoz_RGQCkG66DaikwieeG_pRVGzSwTr4oAcI9cTMb",
+        },
+    },
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "src",
+    },
+}

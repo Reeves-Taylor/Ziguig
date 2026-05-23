@@ -1,0 +1,25 @@
+.{
+    .name = .wayland_zig,
+    .version = "1.0.0",
+    .dependencies = .{
+        .wayland = .{
+            .url = "git+https://gitlab.freedesktop.org/wayland/wayland?ref=1.24.91#e6aeed9816f9fa202ed49318b7b25f867676999a",
+            .hash = "N-V-__8AAHr0JACeIVK5CkrixKeVluYqJ4OPDz1ss5bvTWd9",
+        },
+        .@"wayland-protocols" = .{
+            .url = "git+https://gitlab.freedesktop.org/wayland/wayland-protocols?ref=1.48#02e63e74a807afed95bc25a386173110afef24e3",
+            .hash = "N-V-__8AAMCWEADA0AS-1LfBEtixZLJAb_XQKQpgSmR2uxAO",
+        },
+        .toolbox = .{
+            .url = "git+https://github.com/tiawl/toolbox?ref=2.1.0#d6707186fcf520534dd0bdb20934c9b6b67582b5",
+            .hash = "toolbox-2.0.2-kRAu4O6aAAAxP6SQ-xIfkIQO8x5RwYAA_zaGG2eYzDA7",
+        },
+    },
+    .minimum_zig_version = "0.16.0",
+    .fingerprint = 0x879377398f3e6626,
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "wayland",
+    },
+}

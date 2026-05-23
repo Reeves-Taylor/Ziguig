@@ -1,4 +1,3 @@
-
 # Ziguig
 
 ## Short Description
@@ -22,7 +21,7 @@ Ziguig's goal is to make creating GUI applications in Zig simple and portable. A
 Windowing Library	  ->|
 ______________________	|
 Rendering Library	  ->|
-______________________  |---------> SourceCode.zig
+______________________  |---------> Ziguig ---> SourceCode.zig
 Text Rendering Library->|
 ______________________  |
 GUI Elements Library  ->|
@@ -36,6 +35,12 @@ While these libraries can be used independently, they are all included in the ma
 
 Ziguig is currently in early development and is not yet production-ready.
 APIs may change frequently.
+
+## Coming Soon
+Coming Soon: ZiguigWindow version 0.1.0, the windowing library prototype. 
+
+### Predicted Push Deadline 
+(DD.MM.YY): 25.5.26
 
 ## Contributing
 Contributions, issues, and suggestions are welcome.  
@@ -53,22 +58,25 @@ Use:
 
 ## Installation
 For most systems:
-## Installation  
   
 Clone the repository into your project folder or global imports using:  
   
 `git clone <url>`  
   
-Then add the dependency to your `build.zig`.
+Then add the dependency to your `build.zig`
+
+or
+
+`use zig --fetch git+<url>.git`
 
 For Linux:
-Use your package manager to install the latest version from there if available or previously mentioned cloning method.
+Use your package manager to install the latest version from there if available or previously mentioned cloning method/fetch method.
 
 For MacOS:
-Use homebrew to install the latest version from there if available or previously mentioned cloning method.
+Use homebrew to install the latest version from there if available or previously mentioned cloning method/fetch method.
 
 For Windows:
-Use the previously mentioned cloning method or installer if available.
+Use the previously mentioned cloning method/fetch method or installer if available.
 
 Note: Using the latest version is recommended for bug fixes and API improvements. Migration guides will be provided when needed.
 
